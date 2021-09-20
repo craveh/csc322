@@ -1,1 +1,3 @@
+wget https://www.cs.miami.edu/home/wuchtys/CSC322-20F/Content/UNIXUse/MyCode/Ticker.c
 
+gcc Ticker.c -o Ticker
