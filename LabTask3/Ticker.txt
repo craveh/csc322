@@ -1,1 +1,8 @@
-
+./Ticker 5 & ./Ticker 7
+Ctrl + Z
+jobs
+bg %2
+fg %1
+Ctrl + Z
+kill %1
+kill %2
