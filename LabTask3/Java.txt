@@ -1,1 +1,2 @@
+egrep '^( *int +[a-z].*;)' JAVA
 
