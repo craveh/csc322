@@ -1,11 +1,5 @@
-Put the commands that you used to do these into a file named Permissions.txt.
-    Create a directory called IveGotRights off LabTask3. Set its permissions to (0.25%):Read, write, and execute permission for the owner
-    Read and write permission for the group, Read permission for others using numerical codes. 
-    Furthermore, establish that newly created files will by default have (0.25%)Read and write permission for the owner Read and write permission for the group Read permission for others
+#Starting off in /LabTask3
 
-
-
-cd LabTask3
 mkdir IveGotRights
 chmod 764 IveGotRights
 
