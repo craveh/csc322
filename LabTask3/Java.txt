@@ -1,2 +1,12 @@
-egrep '^( *int +[a-zA-Z].*;)' JAVA
+egrep '^( *int +[^#]+;)' JAVA
 
+
+Results from this:
+
+int aDog;
+int   aDog  ;
+    int BadDog;
+    int aDog,aCat;
+    int   aSpaceDog,   aSpaceCat;
+    int aDog, aBadCat;
+int internetName; // fooo
