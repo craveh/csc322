@@ -1,0 +1,37 @@
+4th homework assignment
+
+1. Kangaroos, native animals of Australia, are not known for their intelligence. In fact they're pretty stupid. Only slightly smarter than sheep, and that's not saying much. In the outback kangaroos regularly jump onto the road just when a car is coming along (especially at night, because the car headlights scare them). This makes a serious mess of your car, unless you have a roo-bar on the front. Sadly, many 'roos get killed in these collisions. The Royal Automobile Club Royal of Australia needs a computer program to calculate the expected number of kills each year. This will be done for square parcels of land, each of which has roads of known length running through.The program needs to get the following information from the user:
+
+The length of the side of the square of land (in kilometers).
+
+The length of roads running through the square (in kilometers).
+
+The number of kangaroos living in that square.
+
+The calculation of the expected number of kills has two phases. First, the kangaroo density has to be calculated - this is the number of kangaroos per square kilometer. Second, the road surface area has to be calculated, using the average Australian road width which is 10 meters. These are multiplied with the well known roadkill probability constant, which is 1.47. Here's what a sample run should look like, with the keyboard input in italics 
+
+Enter side of square in km : 3.5 Enter roads length in km : 10
+
+Enter number of 'roos : 150 .
+
+Expected number of kills is : 1.8
+
+The program can be a single main function, or if you're feeling confident, use extra functions appropriately. Name the file roo.c. (3.5%)
+
+2. Tool time! In your garden you plan to build a wall. To calculate the wall's area and the amount of color you need to paint a C-program is needed:The program needs to get the following information from the user:(i) The height of the wall (in feet). (ii) The width of the wall (in feet). First, the program calculates the area of the wall. Second, the program calculates and outputs the amount of paint in gallons to paint the wall. Assume a gallon of paint covers 350 square feet. Third, calculate and output the number of 1 gallon cans needed to paint the wall (round up to the nearest higher gallon number). Here's what a sample run should look like, with input in italics.
+
+Enter height of the wall in feet : 12.0 .
+
+Enter height of the wall in feet : 15.0 
+
+and the ouput in italics
+
+Wall area : 180.00 square feet
+
+Paint needed : 0.51 gallons
+
+Cans needed : 1 can(s)
+
+The program can be a single main function, or if you're feeling confident, use extra functions appropriately. Name the file wall.c. (2.5%)
+
+Remarks: The assignment is due next Friday, Oct 1st, 11:59PM. You need to submit 2 files (roo.c and wall.c file that has the corresponding C code) using submit2 (Please DO NOT submit compiled executables)! Furthermore, the C code needs to compile without any warnings (otherwise the TAs will not consider it)!
