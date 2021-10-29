@@ -1,0 +1,19 @@
+7th homework assignment
+
+
+1.) Write a program to display all comments in a C program. 
+The program is typed in at the keyboard, and the output displayed on the screen. 
+It can also be tested on files by redirecting the standard input. 
+Don't forget to handle quoted strings properly. 
+Furthermore, only comments that start with /* and end with */ need to be accounted for.
+Implement the program in C, name the file comment.c (3.0%)
+
+2.) Write a program in C to find the factorial of a given number using pointers. 
+The program is supposed to prompt the user to put in a number. 
+The calculation of the factorial is supposed to be carried out in a function that takes the memory address of the factorial as an argument. 
+The program returns the factorial of the inputted number. Put the program in a file named factorial.c (3%)
+
+Remarks:
+The assignment is due next Friday, Oct. 29th, 11:59PM.
+You need to submit 2 .c files (comments.c and factorial.c with the corresponding C code using submit2 (Please DO NOT submit compiled executables)! 
+Furthermore, the C code needs to compile without any warnings (use -Wall, otherwise the TAs will not consider it)!
