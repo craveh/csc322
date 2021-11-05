@@ -67,8 +67,8 @@ int main(void){
     ArrayPointer pointers;
 
     for(int i=0; i<5; i++){
-        //numbers[i] = rand();
-        numbers[i] = srand(getpid());
+        numbers[i] = rand();
+        
         pointers[i] = &numbers[i];
     }
     //print orginal int array
