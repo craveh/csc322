@@ -1,0 +1,82 @@
+9th homework assignment
+
+1.) A naturalist is off to explore the amazon jungle and wants to a computer program to record
+information about all the new species discovered.
+For each new species it is necessary to store the name (max 128 characters), size (a real number),
+and the type of animal in an enum type (one of mammal, insect, bird, or fish). (1.0%)
+An array of structures must be used, so that each new species can berecorded in an element of the array (1%). 
+It's not known in advance how many new species will be found, so the program must malloc
+for an initial array of size 1, and use the doubling realloc technique to get more memory as
+required. You must always check the return value from malloc, as done in the Malloc
+wrapper function (or just use Malloc :-) (1%)
+
+Here what a sample run should look like (with the keyboard input shown
+in italics) ...
+> NewSpecies
+Enter animal information ("exit" to exit)
+ What is the name : bloatfish
+What is the size : 12.47
+What is the type : fish
+Enter animal information ("exit" to exit)
+What is the name : stingybeasty
+What is the size : 0.13
+What is the type : insect
+Enter animal information ("exit" to exit)
+What is the name : toothfulsloth
+What is the size : 33.33
+What is the type : mammal
+Enter animal information ("exit" to exit)
+What is the name : exit
+
+The following new species were found:
+bloatfish has size 12.47 and is a fish
+stingybeasty has size 0.13 and is a insect
+toothfulsloth has size 33.33 and is a mammal
+
+Write this program to store and print out the information and put the program into a file named
+newspecies.c (3%).
+
+2.) You are off to shopping and need a program that allows you to enter the names of items, their
+price and quantities. 
+
+Here is what a sample run should look like (with the keyboard input
+shown in italics) ...
+Enter item information ("exit" to exit)
+item 1: chips
+price: 3.5
+quantity: 2
+Enter item information ("exit" to exit)
+item 2: red wine
+price : 15.0
+quantity : 1
+Enter item information ("exit" to exit)
+item 3 : steaks
+price : 15.0
+quantity : 2
+
+Your list:
+steaks   2 $30
+red wine 1 $15
+chips    2 $7
+-----------------------------
+Total $52
+- An array of structures must be used, so that each new item can be recorded in an element
+of the array (0.5%)
+- It's not known in advance how many new items will be added to the list, so the program
+must malloc for an initial array of size 1, and use the doubling realloc technique (as
+discussed in class) to get more memory as required. You must always check the return
+value from malloc, as done in the Malloc wrapper function (or just use Malloc :-).
+(0.5%)
+- After you are done building the shopping list you must sort the array of structures
+according to the total price of each item (1%).
+- Before the program completes it must explicitly free the malloced memory (1%).
+Write this code and put it into a file named shopping.c (3%).
+
+
+
+
+Remarks:
+• The assignment is due next Friday, Nov. 12th, 11:59PM.
+• You need to submit 2 files (newspecies.c, shopping.c) with the corresponding C
+code using submit2( Please DO NOT submit compiled executables) ! Furthermore, the C
+code needs to compile without warnings (use -Wall) (otherwise the TAs won't look at it)
