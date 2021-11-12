@@ -94,8 +94,7 @@ char* getAnimalType(SpeciesType species){
 void printInfo(Animal animal){
     String name;
     float size;
-    String type;
-
+  
     strcpy(name, animal.name);
     size = animal.size;
     //char* tpe = getAnimalType(animal.species);
