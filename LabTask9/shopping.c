@@ -136,7 +136,7 @@ int main(void){
         printInfo(items[i]);
         total += items[i].totalPrice;
     }
-    printf("\t----------------------------\n");
+    printf("\t----------------------------\n\n");
     printf("\tTotal                    $%d\n", total);
 
 
