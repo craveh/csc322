@@ -87,7 +87,7 @@ int main(void){
 
 
     printf("Enter item information (\"exit\" to exit)\n");
-    printf("\n\tItem %d: ", numItems + 1);
+    printf("\n\titem %d: ", numItems + 1);
     fgets(name, MAX, stdin);
     name[strlen(name)-1] = '\0';
 
@@ -114,7 +114,7 @@ int main(void){
         }
 
         printf("\nEnter item information (\"exit\" to exit)\n");
-        printf("\n\tItem %d: ", numItems + 1);
+        printf("\n\titem %d: ", numItems + 1);
         //printf("test");
         fgets(name, MAX, stdin);
         fgets(name, MAX, stdin);
