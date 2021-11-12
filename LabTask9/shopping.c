@@ -58,7 +58,7 @@ Item createNewItem(String name){
 void printInfo(Item item){
 
 
-    printf("\t  %-15s %d     $%d%\n\n",item.name, item.quantity, item.totalPrice);
+    printf("\t  %-15s %d     $%d\n\n",item.name, item.quantity, item.totalPrice);
 
 
 }
