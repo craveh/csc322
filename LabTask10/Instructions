@@ -1,0 +1,104 @@
+
+1. Here's the main function of a program that  
+    • Reads in two matrices by prompting the user for their dimensions, dynamically allocating 
+      memory from the heap, and reading the values into the memory using row major ordering 
+      for the matrix values (1%). 
+    • Multiplies the two matrices together and puts the result into another dynamically 
+      allocated piece of memory (after checking that the dimensions are appropriate for matric 
+      multiplication) (1%). 
+    • Outputs the two input and the result matrices (0.5%). 
+Write the implementations of the functions input_matrix, matrix_multiply, 
+and output_matrix (2.5%). 
+/*---------------------------------------------------------------------------*/ 
+int main(void) { 
+ 
+    double *m1,*m2,*m3; 
+    int m1_rows,m1_columns,m2_rows,m2_columns; 
+ 
+    if (((m1 = input_matrix(&m1_rows,&m1_columns,"Matrix 1")) != NULL) && 
+((m2 = input_matrix(&m2_rows,&m2_columns,"Matrix 2")) != NULL) && 
+((m3 = malloc(m1_rows*m2_columns*sizeof(double))) != NULL)) { 
+        printf("Matrix 1\n"); 
+        output_matrix(m1,m1_rows,m1_columns); 
+        printf("Matrix 2\n"); 
+        output_matrix(m2,m2_rows,m2_columns); 
+        if (matrix_multiply(m1,m1_rows,m1_columns,m2,m2_rows,m2_columns,m3)) 
+{ 
+            printf("Product\n"); 
+            output_matrix(m3,m1_rows,m2_columns); 
+            free(m1); 
+            free(m2); 
+            free(m3); 
+            return(0); 
+        } else { 
+            printf("Error in dimensions\n"); 
+            free(m1); 
+            free(m2); 
+            free(m3); 
+            return(-1); 
+        } 
+    } else { 
+        free(m1); 
+        free(m2); 
+        free(m3); 
+        printf("Error allocating memory\n"); 
+        return(-2); 
+    } 
+} 
+ 
+  
+ 
+2. Since we talked about pointers, memory allocation and linked lists in class, I'd like you to 
+   write a program that allows the user to: 
+    • Enter the names of persons (1%) 
+    • For each person entered, enter the name of his/her best buddy (1%) 
+    • Print out the "best buddys" (0.5%) 
+    •  Each person's name entered must be stored in a node of a linked list. 
+    •  Each node of the linked list must contain (only) the persons name, a pointer to the node for its 
+       best buddy, and a pointer to the next node in the list. 
+    •  Before the program completes it must explicitly free the malloced memory. 
+    
+Here what a sample run should look like (with the user input shown in italics) ... 
+Enter nation name : Tom 
+ 
+Enter nation name : Betty 
+ 
+Enter nation name : Martin 
+ 
+Enter nation name : Michael 
+ 
+Enter nation name : Amanda 
+ 
+Enter nation name : Catharine 
+ 
+Enter nation name : 
+ 
+Enter best ally name for Catharine : Amanda 
+ 
+Enter best ally name for Amanda : Michael 
+ 
+Enter best ally name for Michael : Martin 
+ 
+Enter best ally name for Martin : Betty 
+ 
+Enter best ally name for Betty : Amanda 
+ 
+Enter best ally name for Tom : Catharine 
+ 
+The best ally of Catharine is Amanda 
+ 
+The best ally of Amanda is Michael 
+ 
+The best ally of Michael is Martin 
+ 
+The best ally of Martin is Betty 
+ 
+The best ally of Betty is Amanda 
+ 
+The best ally of Tom is Catharine 
+
+
+Remarks:
+• The assignment is due next Friday, Nov. 19th, 11:59PM. 
+• You need to submit two (matrix.c, best_buddies.c) file with the corresponding C code using submit2 
+  (Please DO NOT submit compiled executables)! Furthermore, the C code needs to compile w/o warnings using -Wall (otherwise the TA's won't look at it) 
