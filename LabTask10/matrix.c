@@ -52,7 +52,7 @@ int matrix_multiply(double *matrix1, int rows1, int cols1, double *matrix2, int 
         //printf("Error testing wrong size\n");
         return 0;
     }
-    int matrixSize = rows1*cols2;
+    //int matrixSize = rows1*cols2;
     //newMatrix = (double *)malloc(matrixSize*sizeof(double));
 
 
