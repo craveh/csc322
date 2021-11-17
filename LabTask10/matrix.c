@@ -40,7 +40,7 @@ void output_matrix(double *matrix, int rows, int cols){
         if(i%cols == 0){
             printf("\n");
         }
-        printf("%.0lf ", matrix[i]);
+        printf("%3.0lf ", matrix[i]);
     }
     printf("\n\n");
 
