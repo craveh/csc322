@@ -50,7 +50,7 @@ void LoadEditCommandsFromFile(char *fileName, CommandsArray commands){
 
     if((CommandsFile = fopen(fileName, "r"))== NULL){
         perror("Cannot open the commands file.\n");
-        return(1);
+        exit(1);
     }
     while(fgets(input,MAX_LENGTH, CommandsFile) !=NULL){
         PutInNullChar(input);
@@ -76,10 +76,13 @@ void LoadEditCommandsFromFile(char *fileName, CommandsArray commands){
 
 //-------------------------------------
 int main(int argc, char * argv[] ){
-    if(argc > 1){
-        LoadEditCommandsFromFile(argv[1]);
-        LoadEditCommandsFromFile(argv[1]);
+    if(argc !=2){
+        perror("Not enough arguements");
+        exit(1);
     }
+    LoadEditCommandsFromFile(argv[1]);
+
+
 
 
 
