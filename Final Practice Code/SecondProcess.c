@@ -14,10 +14,10 @@ int main(){
     }
 
     if(ChildPID == 0){
-        printf("The childs PID is %d and the user name is %s", getpid(), getuid());
+        printf("The childs PID is %d and the user name is %d\n", getpid(), getuid());
     }else{
         sleep(5);
-        printf("The parents PID is %d and the user name is %s", getpid(), getuid());
+        printf("The parents PID is %d and the user name is %d\n", getpid(), getuid());
     }
 
 
